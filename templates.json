@@ -73,6 +73,25 @@
   },
   {
     "type": "container",
+    "title": "MySQL 5.7",
+    "description": "The most popular open-source database",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo": "https://portainer.io/images/logos/mysql.png",
+    "image": "mysql:5.7",
+    "env": [
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "Root password"
+      }
+    ],
+    "ports": [
+      "3306/tcp"
+    ],
+    "volumes": ["/var/lib/mysql"]
+  },
+  {
+    "type": "container",
     "title": "MariaDB",
     "description": "Performance beyond MySQL",
     "categories": ["database"],
